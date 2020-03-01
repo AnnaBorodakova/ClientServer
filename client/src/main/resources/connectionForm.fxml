@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="271.0" prefWidth="408.0" style="-fx-background-color: #fff0f0;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="ConnectionFormController">
+
+    <children>
+        <AnchorPane layoutX="-1.0" layoutY="70.0" prefHeight="186.0" prefWidth="414.0" style="-fx-background-color: #cc7e7e;">
+            <children>
+                <TextField fx:id="hostField" layoutX="116.0" layoutY="43.0" promptText="Хост">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="portField" layoutX="116.0" layoutY="83.0" prefHeight="30.0" prefWidth="175.0" promptText="Порт">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="connectButton" layoutX="156.0" layoutY="135.0" mnemonicParsing="false" onAction="#onClickConnect" prefHeight="22.0" prefWidth="97.0" text="Подключиться" />
+            <Label layoutX="164.0" layoutY="8.0" textFill="#484451">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="connectLab" layoutX="186.0" layoutY="11.0" text="Label" textFill="#5c4b4b">
+               <font>
+                  <Font name="Constantia" size="15.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+        <Label layoutX="114.0" layoutY="24.0" text="Вход в систему " textFill="#484451">
+            <font>
+                <Font name="Calibri Light" size="27.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
